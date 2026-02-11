@@ -1,22 +1,16 @@
-# ── Backend ──────────────────────────────
 fastapi==0.115.6
 uvicorn==0.34.0
 python-multipart==0.0.20
 pydantic==2.10.4
 pydantic-settings==2.7.1
-
-# ── Document Parsing ────────────────────
 PyMuPDF==1.25.3
 python-docx==1.1.2
-
-# ── AI / ML ─────────────────────────────
 ollama==0.4.7
+groq==0.13.1
+fastembed==0.4.2
 faiss-cpu==1.9.0.post1
 numpy==1.26.4
-
-# ── Frontend ────────────────────────────
 streamlit==1.41.1
 requests==2.32.3
-
-# ── Environment ─────────────────────────
 python-dotenv==1.0.1
+pytest==8.3.4
