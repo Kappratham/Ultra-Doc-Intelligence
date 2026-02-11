@@ -1,0 +1,56 @@
+[
+  {
+    "index": 0,
+    "text": "Carrier Details\nCarrier\nCarrier MC\nPhone\nEquipment\nAgreed Amount (USD)\nSize (In feet)\nSWIFT SHIFT LOGISTICS LLC\nMC1685682\n(618) 629-3271\nFlatbed\n$400.00\n48\nStops\n#\nStops\nDate/Time\n1\n2\nRate Breakdown\nCarrier Pay\nTotal\nFlatbed:$ 400.00 USD\n400.00 USD\nPickup\nAAA\nLos Angeles\nInternational Airport\n(LAX), World Way, Los\nAngeles, CA, USA\nPO/Container No\n112233ABC\nLoad Type\nFTL\nShipping Date\n02-08-2026\nShipping Time\n09:00 - 17:00\nAppointment\n15:00\nS.No\nCommodity\nWeight\nQuantity\n1\nCeramic\n56000.00 lbs",
+    "char_start": 0,
+    "char_end": 498
+  },
+  {
+    "index": 1,
+    "text": "Shipping Time\n09:00 - 17:00\nAppointment\n15:00\nS.No\nCommodity\nWeight\nQuantity\n1\nCeramic\n56000.00 lbs\n10000 units\nDescription\nPickup from the shipper location during normal operating hours. Driver to follow on-\nsite instructions at arrival\nDrop\nxyz\n7470 Cherry Avenue,\nFontana, CA 92336,\nUSA\nPO/Container No\n5678abcd\nLoad Type\nFTL\nDelivery Date\n02-08-2026\nDelivery Time\n09:00 - 17:00\nAppointment\n-\nS.No\nCommodity\nWeight\nQuantity\n1\nCeramic\n56000.00 lbs\n10000 units\nDescription",
+    "char_start": 398,
+    "char_end": 872
+  },
+  {
+    "index": 2,
+    "text": "- 17:00\nAppointment\n-\nS.No\nCommodity\nWeight\nQuantity\n1\nCeramic\n56000.00 lbs\n10000 units\nDescription\nDelivery to the consignee location as scheduled. Driver to follow standard receiving\nprocedures.\nDemo\nPowered by Ultraship TMS\nPage 1 of 2\nCarrier Rate and Load Confirmation\n9245 Laguna Springs Dr., Suite#200, Elk Grove, CA,\n95758-7991\nMailing Address: 1250 Broadway, New York, New\nYork, 10001\nPhone: (844) 850-3391\nFax: 916-209-6669\nAfter hour Contact: usdev@ultraship.ai\nDispatcher\nZukhruf Rukha",
+    "char_start": 772,
+    "char_end": 1270
+  },
+  {
+    "index": 3,
+    "text": "e: (844) 850-3391\nFax: 916-209-6669\nAfter hour Contact: usdev@ultraship.ai\nDispatcher\nZukhruf Rukha\nReference ID\nLD53657\nPhone\n+919884954552\nCreated On\n02-07-2026 02:27\nShipping Date\n02-08-2026\nBooking Date\n02-07-2026\nEmail\nzukhruf.rukha@ultraship.ai\n\n\nStanding Instructions\nSpecial Instructions\nAll shipments must be palletized and shrink-wrapped. Drivers should check in at the warehouse and follow site safety rule",
+    "char_start": 1170,
+    "char_end": 1588
+  },
+  {
+    "index": 4,
+    "text": "palletized and shrink-wrapped. Drivers should check in at the warehouse and follow site safety rule\ns. No weekend pickups/deliveries unless pre-approved. For reefer loads, ensure units are pre-cooled to the specified tem\nperature.\nShipper & Carrier Instructions\nshipper instructions: All shipments must be palletized and shrink-wrapped. Drivers should check in at the warehouse and\nfollow site safety rules.",
+    "char_start": 1488,
+    "char_end": 1896
+  },
+  {
+    "index": 5,
+    "text": "lletized and shrink-wrapped. Drivers should check in at the warehouse and\nfollow site safety rules.\ncarrier instructions: No weekend pickups/deliveries unless pre-approved. For reefer loads, ensure units are pre-cooled to\nthe specified temperature.\nTest RC Instructions\nThis is a placeholder for RC instructions. Please review the required steps, verify all details, and proceed accordingly. If any",
+    "char_start": 1796,
+    "char_end": 2195
+  },
+  {
+    "index": 6,
+    "text": "instructions. Please review the required steps, verify all details, and proceed accordingly. If any\nissues are identified, document them and report to the relevant team. These instructions are for demo purposes only.\nDriver Details\nDriver Name\nCell no.\nTruck no.\nTrailer no.\nJohn Doe\n+1 234 567 8900\n123456\n0987654\nAccepted by\nDate\nSignature\nDemo\nPowered by Ultraship TMS\nPage 2 of 2\nCarrier Rate and Load Confirmation\n9245 Laguna Springs Dr., Suite#200, Elk Grove, CA,\n95758-7991",
+    "char_start": 2095,
+    "char_end": 2576
+  },
+  {
+    "index": 7,
+    "text": "2\nCarrier Rate and Load Confirmation\n9245 Laguna Springs Dr., Suite#200, Elk Grove, CA,\n95758-7991\nMailing Address: 1250 Broadway, New York, New\nYork, 10001\nPhone: (844) 850-3391\nFax: 916-209-6669\nAfter hour Contact: usdev@ultraship.ai\nDispatcher\nZukhruf Rukha\nReference ID\nLD53657\nPhone\n+919884954552\nCreated On\n02-07-2026 02:27\nShipping Date\n02-08-2026\nBooking Date\n02-07-2026\nEmail\nzukhruf.rukha@ultraship.ai",
+    "char_start": 2476,
+    "char_end": 2888
+  },
+  {
+    "index": 8,
+    "text": "n\n02-07-2026 02:27\nShipping Date\n02-08-2026\nBooking Date\n02-07-2026\nEmail\nzukhruf.rukha@ultraship.ai",
+    "char_start": 2788,
+    "char_end": 2888
+  }
+]

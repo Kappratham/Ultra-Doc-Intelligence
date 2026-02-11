@@ -1,0 +1,26 @@
+[
+  {
+    "index": 0,
+    "text": "Bill of Lading\n9245 Laguna Springs Dr., Suite#200, Elk Grove, CA,\n95758-7991\nMailing Address: 1250 Broadway, New York, New\nYork, 10001\nPhone: (844) 850-3391\nFax: 916-209-6669\nAfter hour Contact: usdev@ultraship.ai\nLoad ID\nLD53657\nShip Date\n02-08-2026 09:00\nDelivery Date\n02-08-2026 09:00\nPO Number Pickup\n112233ABC\nFreight Charges\nCollect\nCOD\nPrepaid\nShipper\nConsignee\n1.\nAAA ,\nLos Angeles International Airport (LAX), World Way,\nLos Angeles, CA, USA\n1.\nxyz ,",
+    "char_start": 0,
+    "char_end": 460
+  },
+  {
+    "index": 1,
+    "text": "onsignee\n1.\nAAA ,\nLos Angeles International Airport (LAX), World Way,\nLos Angeles, CA, USA\n1.\nxyz ,\n7470 Cherry Avenue, Fontana, CA 92336, USA\n3rd Party Billing\nTransportation Company\n-\n-\n# Of Units\nDescription Of The Commodity\nWeight\nType\nClass\n#10000\nCeramic\n56000 lbs\nN/A\nN/A\nNotes\nCOD Value\nabc test notes\n$64000 USD\nConsignor name\nDate\nSignature\n# of Units Shipped\nTime\nConsignee name\nDate\nSignature\n# of Units Received\nDemo\nPowered by Ultraship TMS\nPage 1 of 2",
+    "char_start": 360,
+    "char_end": 829
+  },
+  {
+    "index": 2,
+    "text": "Time\nConsignee name\nDate\nSignature\n# of Units Received\nDemo\nPowered by Ultraship TMS\nPage 1 of 2\n\n\nTime\nDemo\nPowered by Ultraship TMS\nPage 2 of 2",
+    "char_start": 729,
+    "char_end": 875
+  },
+  {
+    "index": 3,
+    "text": "Received\nDemo\nPowered by Ultraship TMS\nPage 1 of 2\n\n\nTime\nDemo\nPowered by Ultraship TMS\nPage 2 of 2",
+    "char_start": 775,
+    "char_end": 875
+  }
+]

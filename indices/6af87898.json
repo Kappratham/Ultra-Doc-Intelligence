@@ -1,0 +1,32 @@
+[
+  {
+    "index": 0,
+    "text": "Customer Details\nCustomer\nContact\nPhone\nAgreed Amount (USD)\nTest ABC\nrukhazukhruf@gmail.com\n+1 234 567 8900\n$1000.00\nStops\n#\nStops\nDate/Time\n1\n2\nRate Breakdown\nRate Breakdown\nTotal\nFlatbed:$ 1000.00 USD\n$1000.00 USD\nAccepted by\nDate\nSignature\nPickup\nAAA\nLos Angeles\nInternational Airport\n(LAX), World Way, Los\nAngeles, CA, USA\nPO/Container No\n112233ABC\nLoad Type\nFTL\nShipping Date\n02-08-2026\nShipping Time\n09:00 - 17:00\nAppointment\n15:00\nS.No\nCommodity\nWeight\nQuantity\n1\nCeramic\n56000.00 lbs",
+    "char_start": 0,
+    "char_end": 492
+  },
+  {
+    "index": 1,
+    "text": "Shipping Time\n09:00 - 17:00\nAppointment\n15:00\nS.No\nCommodity\nWeight\nQuantity\n1\nCeramic\n56000.00 lbs\n10000 units\nDescription\nPickup from the shipper location during normal operating hours. Driver to follow on-\nsite instructions at arrival\nDrop\nxyz\n7470 Cherry Avenue,\nFontana, CA 92336,\nUSA\nPO/Container No\n5678abcd\nLoad Type\nFTL\nDelivery Date\n02-08-2026\nDelivery Time\n09:00 - 17:00\nAppointment\n-\nS.No\nCommodity\nWeight\nQuantity\n1\nCeramic\n56000.00 lbs\n10000 units\nDescription",
+    "char_start": 392,
+    "char_end": 866
+  },
+  {
+    "index": 2,
+    "text": "- 17:00\nAppointment\n-\nS.No\nCommodity\nWeight\nQuantity\n1\nCeramic\n56000.00 lbs\n10000 units\nDescription\nDelivery to the consignee location as scheduled. Driver to follow standard receiving\nprocedures.\nDemo\nPowered by Ultraship TMS\nPage 1 of 1\nCustomer Rate and Load Confirmation\n9245 Laguna Springs Dr., Suite#200, Elk Grove, CA,\n95758-7991\nMailing Address: 1250 Broadway, New York, New\nYork, 10001\nPhone: (844) 850-3391\nFax: 916-209-6669\nAfter hour Contact: usdev@ultraship.ai\nDispatcher\nZukhruf Rukha",
+    "char_start": 766,
+    "char_end": 1265
+  },
+  {
+    "index": 3,
+    "text": "e: (844) 850-3391\nFax: 916-209-6669\nAfter hour Contact: usdev@ultraship.ai\nDispatcher\nZukhruf Rukha\nReference ID\nLD53657\nPhone\n+919884954552\nCreated On\n02-07-2026 02:27\nShipping Date\n02-08-2026\nBooking Date\n02-07-2026\nEmail\nzukhruf.rukha@ultraship.ai",
+    "char_start": 1165,
+    "char_end": 1415
+  },
+  {
+    "index": 4,
+    "text": "n\n02-07-2026 02:27\nShipping Date\n02-08-2026\nBooking Date\n02-07-2026\nEmail\nzukhruf.rukha@ultraship.ai",
+    "char_start": 1315,
+    "char_end": 1415
+  }
+]
