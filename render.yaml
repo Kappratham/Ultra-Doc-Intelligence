@@ -9,11 +9,11 @@ services:
       - key: LLM_PROVIDER
         value: groq
       - key: CHAT_MODEL
-        value: llama-3.1-8b-instant
+        value: llama2-70b-4096
       - key: GROQ_API_KEY
         sync: false
       - key: PYTHON_VERSION
-        value: "3.11"
+        value: "3.11.7"
 
   - type: web
     name: ultra-doc-frontend
@@ -25,4 +25,5 @@ services:
       - key: API_BASE_URL
         value: https://ultra-doc-backend.onrender.com
       - key: PYTHON_VERSION
-        value: "3.11"
+
+        value: "3.11.7"
