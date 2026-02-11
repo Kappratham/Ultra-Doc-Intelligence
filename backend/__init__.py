@@ -1,3 +1,0 @@
-"""
-Ultra Doc-Intelligence Backend
-"""
