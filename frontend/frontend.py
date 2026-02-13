@@ -173,7 +173,7 @@ if st.session_state.document_id:
         placeholder="e.g., What equipment type is required?",
     )
 
-    if st.button("🔍 Ask", type="primary") and question:
+if st.button("🔍 Ask", type="primary") and question:
         with st.spinner("Searching..."):
             try:
                 resp = requests.post(
