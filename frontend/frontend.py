@@ -3,7 +3,7 @@ import requests
 import os
 
 if os.environ.get("RENDER"):
-    API_BASE_URL = "https://ultra-doc-backend.onrender.com"
+    API_BASE_URL = "https://ultra-doc-backend-vvy0.onrender.com/"
 else:
     API_BASE_URL = os.getenv("API_BASE_URL", "http://localhost:8000")
 
