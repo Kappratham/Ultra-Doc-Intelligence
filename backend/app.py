@@ -257,3 +257,11 @@ async def health_check():
         documents_loaded=document_db.get_document_count(),
         version="1.0.0",
     )
+    
+@app.on_event("startup")
+async def preload_models():
+    if os.environ.get("RENDER"):
+        from backend.llm_client import _get_embed_model
+        logger.info("Preloading embedding model...")
+        _get_embed_model()
+        logger.info("Embedding model ready")    
