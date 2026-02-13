@@ -173,57 +173,58 @@ if st.session_state.document_id:
         placeholder="e.g., What equipment type is required?",
     )
 
-    if st.button("🔍 Ask", type="primary") and question:
-        with st.spinner("Searching and generating answer..."):
+       if st.button("🔍 Ask", type="primary") and question:
+        with st.spinner("Searching..."):
             try:
-                result = ask_question(
-                    st.session_state.document_id, question
+                resp = requests.post(
+                    f"{API_BASE_URL}/ask",
+                    json={"document_id": st.session_state.document_id, "question": question},
+                    timeout=REQUEST_TIMEOUT,
                 )
 
-                # Save to history
-                st.session_state.qa_history.append({
-                    "question": question,
-                    "result": result,
-                })
+                if resp.status_code == 200:
+                    result = resp.json()
+                    st.session_state.qa_history.append({"question": question, "result": result})
+                else:
+                    st.error(f"Error: {resp.text}")
 
-            except requests.exceptions.HTTPError as e:
-                error = e.response.json().get("detail", str(e))
-                st.error(f"❌ {error}")
             except Exception as e:
-                st.error(f"❌ Error: {str(e)}")
+                st.error(f"Error: {str(e)}")
 
-    # ── Display Q&A History ──────────────────────────────
+    # show all Q&A history
+    for qa in reversed(st.session_state.qa_history):
+        r = qa["result"]
 
-    for i, qa in enumerate(reversed(st.session_state.qa_history)):
-        with st.container():
-            result = qa["result"]
+        st.markdown(f"**Question:** {qa['question']}")
 
-            st.markdown(f"**❓ {qa['question']}**")
-            st.markdown(
-                f"**Confidence:** {render_confidence_badge(result['confidence'])}"
-            )
+        # confidence badge
+        conf = r.get("confidence", 0)
+        if conf >= 0.7:
+            badge = f"🟢 High ({conf:.0%})"
+        elif conf >= 0.4:
+            badge = f"🟡 Medium ({conf:.0%})"
+        else:
+            badge = f"🔴 Low ({conf:.0%})"
 
-            if result.get("guardrail_triggered"):
-                st.warning(
-                    f"⚠️ Guardrail: {result.get('guardrail_reason', 'N/A')}"
-                )
+        st.markdown(f"**Confidence:** {badge}")
 
-            st.markdown(f"> {result['answer']}")
+        # guardrail warning
+        if r.get("guardrail_triggered"):
+            st.warning(f"Guardrail: {r.get('guardrail_reason', 'N/A')}")
 
-            if result.get("sources"):
-                with st.expander(
-                    f"📑 View {len(result['sources'])} supporting sources"
-                ):
-                    for j, source in enumerate(result["sources"], 1):
-                        st.markdown(
-                            f"**Source {j}** — Chunk #{source['chunk_index']} "
-                            f"(Similarity: {source['similarity']:.3f})"
-                        )
-                        st.text(source["text"])
-                        st.markdown("---")
+        # THE ANSWER
+        st.success(r.get("answer", "No answer returned"))
 
-            st.markdown("---")
+        # sources
+        sources = r.get("sources", [])
+        if sources:
+            with st.expander(f"View {len(sources)} sources"):
+                for j, src in enumerate(sources, 1):
+                    st.markdown(f"**Source {j}** — Chunk #{src.get('chunk_index', '?')} (similarity: {src.get('similarity', 0):.3f})")
+                    st.text(src.get("text", ""))
+                    st.markdown("---")
 
+        st.markdown("---")
     # ── Section 3: Structured Extraction ─────────────────
 
     st.header("3️⃣ Structured Data Extraction")
