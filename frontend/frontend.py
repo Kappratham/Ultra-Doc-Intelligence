@@ -3,8 +3,9 @@ import streamlit as st
 import requests
 import os
 
-# ── Configuration ────────────────────────────────────────
-API_BASE_URL = os.getenv("API_BASE_URL", "http://localhost:8000")
+API_BASE_URL = os.environ.get("API_BASE_URL") or os.environ.get("RENDER_EXTERNAL_URL") or "http://localhost:8000"
+if "onrender.com" in API_BASE_URL and "frontend" in API_BASE_URL:
+    API_BASE_URL = API_BASE_URL.replace("frontend", "backend")
 REQUEST_TIMEOUT = 60
 
 # ── Page Setup ───────────────────────────────────────────
